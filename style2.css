@@ -20,15 +20,15 @@ body {
 
 header {
     background-color: #000000AA;
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw;
-    
 }
+
 .logo img {
-    width: 80px;
+    width: 140px;
 }
 
 .links ul {
@@ -48,12 +48,10 @@ header {
     color: red;
 }
 main {
-    padding: 25vh 10vw;
+    padding: 15vh 10vw;
     flex-grow: 1;
 }
-main h2 {
-    font-size: 30px;
-}
+
 main h1 {
     font-size: 100px;
     font-family: Helvetica;
@@ -113,11 +111,12 @@ main h1 {
     display: flex;
     flex-direction: column;
     font-style: italic;
+    width: 150px;
 }
 .entidade{
     font-size: 10px;
 }
 footer {
     text-align: center;
-    height: 45px;
+    height: 40px;
 }
