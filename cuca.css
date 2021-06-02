@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+
 }
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("img/MicrosoftTeams-image.png");
-    background-color: #00000055;
+    background-image: url(img/cuca-img.jpg);
+    background-color: #00000066;
     background-blend-mode: darken;
     background-size: cover;
     background-position: right top;
@@ -15,7 +17,6 @@ body {
     flex-direction: column;
     font-family: 'Karla', sans-serif;
     color: white;
-
 }
 
 header {
@@ -31,7 +32,7 @@ header {
     width: 140px;
 }
 
-.links ul {
+.links > ul {
     display: flex;
     gap: 20px;
     color: white;
@@ -41,23 +42,36 @@ header {
     text-decoration: none;
     font-size: 20px;
     transition: all 1s;
-    user-select: all ls;
+    user-select: none;
     color: white;
 }
 .links a:hover {
     color: red;
 }
 main {
-    padding: 10vh 10vw;
+    padding: 15vh 10vw;
     flex-grow: 1;
 }
 
 main h1 {
+    position: relative;
     font-size: 100px;
     font-family: Helvetica;
     color: #00000000;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: transparent;
+    
+}
+
+main h1::after {
+    content: "Cuca";
+    -webkit-text-stroke: 3px #111;
+    color:transparent;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: -1;
 }
 .lenda {
     transform: rotate(270deg);
@@ -72,7 +86,7 @@ main h1 {
 .textos {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .descricao {
     font-size: 20px;
