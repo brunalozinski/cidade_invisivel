@@ -12,6 +12,7 @@ body {
     background-color: #00000055;
     background-blend-mode: darken;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: right top;
     display: flex;
     flex-direction: column;
@@ -27,8 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw;
-    /*padding-left: 200px;
-    padding-right: 200px;*/
+    
    
 }
 .logo img {
