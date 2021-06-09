@@ -8,7 +8,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("img/cidade-invisivel.jpg");
+    background-image: url(img/imgParaFundo.jpg);
     background-color: #00000055;
     background-blend-mode: darken;
     background-size: cover;
@@ -49,58 +49,21 @@ header {
     color: red;
 }
 main {
-    padding: 20vh 10vw;
     flex-grow: 1;
 }
-main h2 {
-    font-size: 30px;
-}
-main h1 {
-    font-size: 60px;
-}
-main p {
+h1 {
+    padding: 9vh 12vw;
     font-size: 20px;
+}
+.information {
+    padding: 3vh 12vw;
+    font-size: 25px;
     font-weight: 200;
-    max-width: 650px;
-}
-main a {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    width: 200px;
-    height: 50px;
-    background-color: goldenrod;
-    margin-top: 30px;
-    border-radius: 20px;
-    transition: all .5s;
-    
-}
-main a:hover {
-    border: solid 1px goldenrod;
-    background-color: black;
+    max-width: 800px;
 }
 
 footer {
-    padding: 4vh 10vw;
+    padding: 7vh 10vw;
     text-align: center;
     height: 40px;
-}
-.butterfly {
-    position:absolute;
-    width: 60px;
-    top: 90vh;
-    left: 90vw;
-    filter: brightness(10%);
-    animation: voar 20s linear infinite;
-}
-@keyframes voar {
-    0% {
-        transform: translate(0,0);
-    }
-    100% {
-        transform: translate(-90vw, -90vh);
-    }
 }

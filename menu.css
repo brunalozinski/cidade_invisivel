@@ -27,12 +27,8 @@
     color: white;
     text-decoration: none;
     transition: all .3s linear;
+    
 }
-.menu a:hover {
-    background-color: #f87529e5;
-    color: black;
-}
-
 .menu li:hover > .submenu {
     display: block;
 }
